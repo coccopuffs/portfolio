@@ -1,5 +1,6 @@
 import "./App.css";
 import { createTheme, ThemeProvider, makeStyles } from "@mui/material/styles";
+import CustomBtn from "./components/CustomBtn";
 
 const theme = createTheme({
   palette: {
@@ -26,7 +27,9 @@ const theme = createTheme({
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={theme}></ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CustomBtn />
+      </ThemeProvider>
     </div>
   );
 }
