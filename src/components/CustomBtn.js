@@ -1,6 +1,10 @@
-import React from "react";
-import { Button } from "@mui/material";
+import * as React from "react";
+import Button from "@mui/material/Button";
 
-export default function CustomBtn() {
-  return <Button>Hello World</Button>;
+export function CustomBtn(props) {
+  return (
+    <Button variant="contained" onClick={() => console.log("hi")}>
+      {props.txt}
+    </Button>
+  );
 }
